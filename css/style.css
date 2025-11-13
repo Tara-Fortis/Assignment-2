@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+nav {
+    background-color: #253f26;
+    overflow: hidden;
+}
+
+.nav-link {
+    color: #ffffff;
+}

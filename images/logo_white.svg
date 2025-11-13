@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-7c6cddfe-05a8-4989-a681-902aa72217e8" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496.8 496.8">
+  <defs>
+    <style>
+      .uuid-9da8e492-78d5-4e22-8b55-926eada7b9e2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 20px;
+      }
+    </style>
+  </defs>
+  <g id="uuid-f39c8bed-0a31-44ba-8dff-4cc630669969" data-name="Layer 1">
+    <g>
+      <polygon class="uuid-9da8e492-78d5-4e22-8b55-926eada7b9e2" points="408.4 10 248.4 57.9 408.4 105.7 408.4 10"/>
+      <polygon class="uuid-9da8e492-78d5-4e22-8b55-926eada7b9e2" points="408.4 486.8 408.4 391.1 248.4 439 408.4 486.8"/>
+      <polygon class="uuid-9da8e492-78d5-4e22-8b55-926eada7b9e2" points="10 129.2 10 367.6 88.5 391.1 88.5 105.7 10 129.2"/>
+      <polygon class="uuid-9da8e492-78d5-4e22-8b55-926eada7b9e2" points="88.5 10 88.5 105.7 248.4 57.9 88.5 10"/>
+      <polygon class="uuid-9da8e492-78d5-4e22-8b55-926eada7b9e2" points="88.5 486.8 248.4 439 88.5 391.1 88.5 486.8"/>
+      <polygon class="uuid-9da8e492-78d5-4e22-8b55-926eada7b9e2" points="486.8 129.2 408.4 105.7 408.4 391.1 486.8 367.6 486.8 129.2"/>
+    </g>
+  </g>
+</svg>
