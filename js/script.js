@@ -5,16 +5,16 @@ document.getElementById("year").innerHTML = new Date().getFullYear();
 // Bootstrap Carousel Multiple Slides at Once
 // Adapted from https://stackoverflow.com/questions/20007610/bootstrap-carousel-multiple-frames-at-once
 let items = document.querySelectorAll('.carousel .carousel-item')
-items.forEach((el) => {
+items.forEach((element) => {
     const minPerSlide = 4
-    let next = el.nextElementSibling
+    let next = element.nextElementSibling
     for (var i = 1; i < minPerSlide; i++) {
         if (!next) {
             // wrap carousel by using first child
             next = items[0]
         }
         let cloneChild = next.cloneNode(true)
-        el.appendChild(cloneChild.children[0])
+        element.appendChild(cloneChild.children[0])
         next = next.nextElementSibling
     }
 })
