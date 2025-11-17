@@ -46,3 +46,7 @@ nav {
 .carousel-inner .carousel-item-start {
     transform: translateX(0);
 }
+
+article {
+    margin-top: 2em;
+}

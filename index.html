@@ -9,8 +9,10 @@
     <link rel="icon" href="images/logo_black.svg">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+</head>
 
 <body>
+    <!--NavBar-->
     <header>
         <nav class="navbar navbar-expand-md" data-bs-theme="dark">
             <div class="container-fluid">
@@ -39,8 +41,7 @@
             <img class="img-fluid" src="images/brandon_sanderson.png" alt="Photo of Brandon Sanderson">
             <p>
                 By <a href="//commons.wikimedia.org/wiki/User:Jaqen" title="User:Jaqen">Niccolò Caranti</a> - <span
-                    class="int-own-work" lang="en">Own work</span>, <a
-                    href="https://creativecommons.org/licenses/by-sa/4.0"
+                    lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0"
                     title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a
                     href="https://commons.wikimedia.org/w/index.php?curid=52728836">Link</a>
             </p>
@@ -76,59 +77,72 @@
             </div>
         </form>
         <article>
-    <h3>Praise for <em>Tress of the Emerald Sea</em></h3>
-    <ul class="nav nav-tabs" id="reviewTabs" role="tablist">
-        <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="tab-review-1" data-bs-toggle="tab" data-bs-target="#review-1"
-                type="button" role="tab" aria-controls="review-1" aria-selected="true">
-                Review 1
-            </button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="tab-review-2" data-bs-toggle="tab" data-bs-target="#review-2"
-                type="button" role="tab" aria-controls="review-2" aria-selected="false">
-                Review 2
-            </button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="tab-review-3" data-bs-toggle="tab" data-bs-target="#review-3"
-                type="button" role="tab" aria-controls="review-3" aria-selected="false">
-                Review 3
-            </button>
-        </li>
-    </ul>
-    <div class="tab-content" id="reviewTabsContent">
-        <div class="tab-pane fade show active" id="review-1" role="tabpanel" aria-labelledby="tab-review-1">
-            <h4>A Cosmere Classic</h4>
-            <p>As someone who has been devouring every page Brandon Sanderson has written since <em>Elantris</em>,
-                <em>Tress of the Emerald Sea</em> isn't just a book, its a GIFT!!! This secret project felt like
-                sailing to a brand new shore
-            </p>
-            <p>I love Sanderson's books for his intricate epics, and here he proves his mastery of the elevated fairy
-                tale. The different "seas" of spores is a breathtaking application of his hard magic system. Also,
-                having Hoid narrate is just a treat! It adds a layer of wit and heart that long-time Cosmere fans
-                will truly enjoy.</p>
-        </div>
-        <div class="tab-pane fade" id="review-2" role="tabpanel" aria-labelledby="tab-review-2">
-            <h4>On Curiosity, Courage, and Cups of Coffee</h4>
-            <p>There is a particular story, the quiet one, beginning in a small place, with an unremarkable girl who
-                finds herself drawn to an impossible journey. And in the impossible is where the true story is
-                always found.
-            </p>
-        </div>
-        <div class="tab-pane fade" id="review-3" role="tabpanel" aria-labelledby="tab-review-3">
-            <h4>[SPOILERS] Mild Concept Spoilers Ahead</h4>
-            <p>Guys, I just finished Tress, and we need to talk about the Spore Seas. Seriously, this might be some
-                of the most original worldbuilding Brandon has ever done, and this is from the guy who invented
-                allomancy and surgebinding.</p>
-            <p>This book feels like he took the worldbuilding of a massive epic, compressed it into one adventure,
-                and gave us a really fresh fantasy setting with incredibly high stakes derived entirely from the
-                planetary ecology. It's the kind of worldbuilding you want to immediately start charting on a
-                whiteboard. If you are a fan of unique magic systems that blend environmental science, check this
-                out!</p>
-        </div>
-    </div>
-</article>
+            <h3>Reviews for <em>Tress of the Emerald Sea</em></h3>
+            <ul class="nav nav-tabs" id="reviewTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-dark active" id="tab-review-1" data-bs-toggle="tab"
+                        data-bs-target="#review-1" type="button" role="tab" aria-controls="review-1"
+                        aria-selected="true">
+                        Review 1
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-dark" id="tab-review-2" data-bs-toggle="tab" data-bs-target="#review-2"
+                        type="button" role="tab" aria-controls="review-2" aria-selected="false">
+                        Review 2
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-dark" id="tab-review-3" data-bs-toggle="tab" data-bs-target="#review-3"
+                        type="button" role="tab" aria-controls="review-3" aria-selected="false">
+                        Review 3
+                    </button>
+                </li>
+            </ul>
+            <div class="tab-content card" id="reviewTabsContent">
+                <div class="tab-pane show card-body active" id="review-1" role="tabpanel">
+                    <h4 class="card-title">A Cosmere Classic</h4>
+                    <p class="card-text">As someone who has been devouring every page Brandon Sanderson has written
+                        since
+                        <em>Elantris</em>,
+                        <em>Tress of the Emerald Sea</em> isn't just a book, its a GIFT!!! This secret project felt like
+                        sailing to a brand new shore
+                    </p>
+                    <p class="card-text">I love Sanderson's books for his intricate epics, and here he proves his
+                        mastery of the elevated
+                        fairy
+                        tale. The different "seas" of spores is a breathtaking application of his hard magic system.
+                        Also,
+                        having Hoid narrate is just a treat! It adds a layer of wit and heart that long-time Cosmere
+                        fans
+                        will truly enjoy.</p>
+                </div>
+                <div class="tab-pane card-body" id="review-2" role="tabpanel">
+                    <h4 class="card-title">On Curiosity, Courage, and Cups of Coffee</h4>
+                    <p class="card-text">There is a particular story, the quiet one, beginning in a small place, with an
+                        unremarkable girl
+                        who
+                        finds herself drawn to an impossible journey. And in the impossible is where the true story is
+                        always found.
+                    </p>
+                </div>
+                <div class="tab-pane card-body" id="review-3" role="tabpanel">
+                    <h4 class="card-title">[SPOILERS] Mild Concept Spoilers Ahead</h4>
+                    <p class="card-text">Guys, I just finished Tress, and we need to talk about the Spore Seas.
+                        Seriously, this might be
+                        some
+                        of the most original worldbuilding Brandon has ever done, and this is from the guy who invented
+                        allomancy and surgebinding.</p>
+                    <p class="card-text">This book feels like he took the worldbuilding of a massive epic, compressed it
+                        into one
+                        adventure,
+                        and gave us a really fresh fantasy setting with incredibly high stakes derived entirely from the
+                        planetary ecology. It's the kind of worldbuilding you want to immediately start charting on a
+                        whiteboard. If you are a fan of unique magic systems that blend environmental science, check
+                        this
+                        out!</p>
+                </div>
+            </div><!-- .tab-content -->
         </article>
         <!-- Book Title Carousel-->
         <article class="container text-center my-3" data-bs-theme="dark">
@@ -214,8 +228,71 @@
             <h5 class="mt-2 fw-light">See more of Brandon Sanderson's books at <a
                     href="https://www.brandonsanderson.com/">https://www.brandonsanderson.com/</a></h5>
             <article>
-                <h3>Publisher's Information</h3>
-                <p>Use an accordion here</p>
+                <h2>DragonSteel Entertainment LLC</h2>
+                <div class="accordion" id="publisherAccordion">
+                    <section class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#publisherInfo">
+                                Overview
+                            </button>
+                        </h3>
+                        <div id="publisherInfo" class="accordion-collapse collapse"
+                            data-bs-parent="publisherAccordion">
+                            <p class="accordion-body">Dragonsteel Entertainment LLC was founded by Brandon Sanderson in
+                                2021 and holds copyrights to many of Brandon's books. On their <a
+                                    href="https://www.dragonsteelbooks.com/">website</a> they sell specialty books, art
+                                prints, collectibles, apparel, themed merchandise, and seasonal items. The company is
+                                guided by its mission statement: “Creating our worlds to inspire yours.”</p>
+
+                        </div>
+                    </section>
+                    <section class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#publisherInfoTwo">
+                                About the Publisher
+                            </button>
+                        </h3>
+                        <div id="publisherInfoTwo" class="accordion-collapse collapse"
+                            data-bs-parent="publisherAccordion">
+                            <p class="accordion-body">Dragonsteel specializes in producing exclusive editions of
+                                Sanderson’s works, including The
+                                Stormlight Archive, Mistborn, and Cytoverse. Beyond books, the company offers a wide
+                                range
+                                of products such as leatherbound editions, art prints, apparel, themed merchandise like
+                                pins
+                                and dice sets, and seasonal collectibles including holiday cards and Radiant Order gear.
+                            </p>
+                            <p class="accordion-body">Community engagement is a central part of Dragonsteel’s identity.
+                                The company hosts
+                                fan-focused events such as Light Day and participates in conventions like DSNX25. It
+                                also
+                                maintains a blog that shares updates on Cosmere continuity, behind-the-scenes projects,
+                                and
+                                themed celebrations, while offering fans immersive experiences through features like
+                                “Enter
+                                the Cognitive Realm.”</p>
+                        </div>
+                    </section>
+                    <section class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#publisherInfoThree">
+                                Legal Information
+                            </button>
+                        </h3>
+                        <div id="publisherInfoThree" class="accordion-collapse collapse"
+                            data-bs-parent="publisherAccordion">
+                            <p class="accordion-body">Legally, Dragonsteel Entertainment LLC holds copyright over its
+                                products and publications, with all rights reserved under © 2025 Dragonsteel Books. At
+                                its
+                                core, the company reflects Brandon Sanderson’s vision of blending storytelling with
+                                collectible design, offering readers and fans a way to connect deeply with the Cosmere
+                                universe.</p>
+                        </div>
+                    </section>
+                </div><!-- .accordion -->
             </article>
         </article>
     </main>
