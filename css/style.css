@@ -1,13 +1,19 @@
 @charset "UTF-8";
 
-/* Color Palette */
-/*
-    Dark Green: #253f26
-    Light Green: #4c783b
-    Yellow: #d0b82a
-    White: #ffffff
-    Black: #000000
-*/
+/* Layout */
+/* main > div {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    /* gap: 1.5rem;
+    padding: 1rem;
+    background-color: pink;
+    outline: 1px dashed darkblue;
+} */
+
+article {
+    margin-top: 2em;
+}
 
 /* Navigation */
 nav {
@@ -34,6 +40,52 @@ nav {
     background-color: #142115;
     border-color: #142115;
 }
+/* Button Animation */
+#order-now {
+    animation: glowing 1300ms infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-color: #253f26;
+        box-shadow: 0 0 3px #253f26;
+        border: 1px solid #253f26;
+    }
+
+    50% {
+        background-color: #4c783b;
+        box-shadow: 0 0 10px #4c783b;
+        border: 1px solid #4c783b;
+    }
+
+    100% {
+        background-color: #253f26;
+        box-shadow: 0 0 3px #253f26;
+        border: 1px solid #253f26;
+    }
+}
+
+/* Tabs */
+#tab-review-1,
+#tab-review-2,
+#tab-review-3 {
+    color: black;
+}
+
+#tab-review-1.active,
+#tab-review-2.active,
+#tab-review-3.active {
+    background-color: #4c783b;
+    color: white;
+    border-bottom: 1px solid #4c783b;
+}
+
+#review-1.active,
+#review-2.active,
+#review-3.active {
+    background-color: #4c783b;
+    color: white;
+}
 
 /* Accordion */
 .accordion-button,
@@ -48,23 +100,21 @@ nav {
     color: #d0b82a;
 }
 
-/* Focus States */
-.form-control:focus,
-.form-select:focus,
-.btn:focus,
-.btn:active:focus,
-.btn.active:focus,
-.accordion-button:focus,
-.nav-link:focus,
-.navbar-toggler:focus {
-    border-color: #d0b82a;
-    box-shadow: 0 0 0 0.2rem rgba(208, 184, 42, 0.25);
-}
-
 /* Carousel */
 /* Adapted from https://stackoverflow.com/questions/20007610/bootstrap-carousel-multiple-frames-at-once */
 
-/* Mobile carousel styles */
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0);
+}
+
+/* Mobile */
 @media (max-width: 767px) {
     .carousel-inner .carousel-item>div {
         display: none;
@@ -75,14 +125,7 @@ nav {
     }
 }
 
-/* Carousel item states */
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-    display: flex;
-}
-
-/* Desktop carousel transitions */
+/* Desktop */
 @media (min-width: 768px) {
 
     .carousel-inner .carousel-item-end.active,
@@ -96,12 +139,15 @@ nav {
     }
 }
 
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start {
-    transform: translateX(0);
-}
-
-/* Layout */
-article {
-    margin-top: 2em;
+/* Focus States */
+.form-control:focus,
+.form-select:focus,
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.accordion-button:focus,
+.nav-link:focus,
+.navbar-toggler:focus {
+    border-color: #d0b82a;
+    box-shadow: 0 0 0 0.2rem rgba(208, 184, 42, 0.25);
 }
