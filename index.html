@@ -32,20 +32,40 @@
         </nav>
     </header>
     <main class="m-3">
-        <article>
-            <h1>Tress of the Emerald Sea</h1>
-            <img src="images/tress_book_hardcover.png" alt="Book Cover for tress of the emerald sea">
-        </article>
-        <article>
-            <h2>Brandon Sanderson</h2>
-            <img class="img-fluid" src="images/brandon_sanderson.png" alt="Photo of Brandon Sanderson">
-            <p>
-                By <a href="//commons.wikimedia.org/wiki/User:Jaqen" title="User:Jaqen">Niccolò Caranti</a> - <span
-                    lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0"
-                    title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a
-                    href="https://commons.wikimedia.org/w/index.php?curid=52728836">Link</a>
-            </p>
-        </article>
+        <div class="grid">
+            <article class="text-center">
+                <h1>Tress of the Emerald Sea</h1>
+                <img src="images/tress_book_hardcover.png" alt="Book Cover for tress of the emerald sea">
+            </article>
+            <article>
+                <figure>
+                    <img class="img-fluid" src="images/brandon_sanderson.png" alt="Photo of Brandon Sanderson">
+                    <figcaption>Brandon Sanderson
+                        <p>
+                            <small>
+                                By <a href="//commons.wikimedia.org/wiki/User:Jaqen" title="User:Jaqen">Niccolò
+                                    Caranti</a>
+                                - <span lang="en">Own work</span>, <a
+                                    href="https://creativecommons.org/licenses/by-sa/4.0"
+                                    title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a
+                                    href="https://commons.wikimedia.org/w/index.php?curid=52728836">Link</a>
+                            </small>
+                        </p>
+                    </figcaption>
+                </figure>
+                <p>
+                    Brandon Sanderson is a major figure in contemporary fantasy, known for building the Cosmere, a
+                    shared universe that links series such as Mistborn and The Stormlight Archive. His approach
+                    emphasizes clear rules for magic, treating it almost like a science, which has influenced how
+                    readers and writers think about the genre.
+                </p>
+                <p>
+                    In 2023, he released Tress of the Emerald Sea as the first of four “Secret Projects” written during
+                    the pandemic. Inspired by the playful tone of The Princess Bride, the novel shows how Sanderson can
+                    shift style while keeping the structural clarity and interconnected design that define his work.
+                </p>
+            </article>
+        </div>
         <article>
             <h3>Synopsis</h3>
             <p>
@@ -66,13 +86,13 @@
                 <fieldset>
                     <label class="form-label">
                         Name:
-                        <input type="text" class="form-control" />
+                        <input name="name" type="text" class="form-control" autocomplete="name" />
                     </label>
                 </fieldset>
                 <fieldset>
                     <label class="form-label">
                         Email:
-                        <input type="email" class="form-control" />
+                        <input type="email" class="form-control" autocomplete="email" />
                     </label>
                 </fieldset>
                 <button class="btn btn-primary mb-1" type="submit">Place order</button>
