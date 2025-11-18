@@ -57,7 +57,8 @@
                 a sea where a single drop of water can mean instant death?
             </p>
         </article>
-        <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#form">Order your
+        <button class="btn btn-danger" id="order-now" type="button" data-bs-toggle="collapse"
+            data-bs-target="#form">Order your
             copy now</button>
         <form>
             <div id="form" class="collapse">
@@ -80,35 +81,34 @@
             <h3>Reviews for <em>Tress of the Emerald Sea</em></h3>
             <ul class="nav nav-tabs" id="reviewTabs" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link text-dark active" id="tab-review-1" data-bs-toggle="tab"
-                        data-bs-target="#review-1" type="button" role="tab" aria-controls="review-1"
-                        aria-selected="true">
+                    <button class="nav-link active" id="tab-review-1" data-bs-toggle="tab" data-bs-target="#review-1"
+                        type="button" role="tab">
                         Review 1
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link text-dark" id="tab-review-2" data-bs-toggle="tab" data-bs-target="#review-2"
-                        type="button" role="tab" aria-controls="review-2" aria-selected="false">
+                    <button class="nav-link" id="tab-review-2" data-bs-toggle="tab" data-bs-target="#review-2"
+                        type="button" role="tab">
                         Review 2
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link text-dark" id="tab-review-3" data-bs-toggle="tab" data-bs-target="#review-3"
-                        type="button" role="tab" aria-controls="review-3" aria-selected="false">
+                    <button class="nav-link" id="tab-review-3" data-bs-toggle="tab" data-bs-target="#review-3"
+                        type="button" role="tab">
                         Review 3
                     </button>
                 </li>
             </ul>
-            <div class="tab-content card" id="reviewTabsContent">
-                <div class="tab-pane show card-body active" id="review-1" role="tabpanel">
-                    <h4 class="card-title">A Cosmere Classic</h4>
-                    <p class="card-text">As someone who has been devouring every page Brandon Sanderson has written
+            <div class="tab-content" id="reviewTabsContent">
+                <div class="tab-pane p-3 show active" id="review-1" role="tabpanel">
+                    <h4>A Cosmere Classic</h4>
+                    <p>As someone who has been devouring every page Brandon Sanderson has written
                         since
                         <em>Elantris</em>,
                         <em>Tress of the Emerald Sea</em> isn't just a book, its a GIFT!!! This secret project felt like
                         sailing to a brand new shore
                     </p>
-                    <p class="card-text">I love Sanderson's books for his intricate epics, and here he proves his
+                    <p>I love Sanderson's books for his intricate epics, and here he proves his
                         mastery of the elevated
                         fairy
                         tale. The different "seas" of spores is a breathtaking application of his hard magic system.
@@ -117,23 +117,23 @@
                         fans
                         will truly enjoy.</p>
                 </div>
-                <div class="tab-pane card-body" id="review-2" role="tabpanel">
-                    <h4 class="card-title">On Curiosity, Courage, and Cups of Coffee</h4>
-                    <p class="card-text">There is a particular story, the quiet one, beginning in a small place, with an
+                <div class="tab-pane p-3" id="review-2" role="tabpanel">
+                    <h4>On Curiosity, Courage, and Cups of Coffee</h4>
+                    <p>There is a particular story, the quiet one, beginning in a small place, with an
                         unremarkable girl
                         who
                         finds herself drawn to an impossible journey. And in the impossible is where the true story is
                         always found.
                     </p>
                 </div>
-                <div class="tab-pane card-body" id="review-3" role="tabpanel">
-                    <h4 class="card-title">[SPOILERS] Mild Concept Spoilers Ahead</h4>
-                    <p class="card-text">Guys, I just finished Tress, and we need to talk about the Spore Seas.
+                <div class="tab-pane p-3" id="review-3" role="tabpanel">
+                    <h4>[SPOILERS] Mild Concept Spoilers Ahead</h4>
+                    <p>Guys, I just finished Tress, and we need to talk about the Spore Seas.
                         Seriously, this might be
                         some
                         of the most original worldbuilding Brandon has ever done, and this is from the guy who invented
                         allomancy and surgebinding.</p>
-                    <p class="card-text">This book feels like he took the worldbuilding of a massive epic, compressed it
+                    <p>This book feels like he took the worldbuilding of a massive epic, compressed it
                         into one
                         adventure,
                         and gave us a really fresh fantasy setting with incredibly high stakes derived entirely from the
@@ -294,7 +294,6 @@
                     </section>
                 </div><!-- .accordion -->
             </article>
-        </article>
     </main>
     <footer>
         © <span id="year"></span> by Tineil Armstrong | 200299153
