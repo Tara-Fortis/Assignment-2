@@ -30,6 +30,17 @@ h4 {
     grid-template-columns: repeat(2, 1fr);
 }
 
+aside {
+    background-color: #142115;
+    color: white;
+    padding: 1rem;
+}
+
+article>img {
+    max-width: 100%;
+    height: auto;
+}
+
 article {
     margin-top: 2em;
 }
@@ -122,19 +133,6 @@ nav {
 
 /* Carousel */
 /* Adapted from https://stackoverflow.com/questions/20007610/bootstrap-carousel-multiple-frames-at-once */
-
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-    display: flex;
-}
-
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start {
-    transform: translateX(0);
-}
-
-/* Mobile */
 @media (max-width: 767px) {
     .carousel-inner .carousel-item>div {
         display: none;
@@ -145,7 +143,13 @@ nav {
     }
 }
 
-/* Desktop */
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
 @media (min-width: 768px) {
 
     .carousel-inner .carousel-item-end.active,
@@ -159,6 +163,13 @@ nav {
     }
 }
 
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0);
+}
+
+
+
 /* Focus States */
 .form-control:focus,
 .form-select:focus,
@@ -170,4 +181,13 @@ nav {
 .navbar-toggler:focus {
     border-color: #d0b82a;
     box-shadow: 0 0 0 0.2rem rgba(208, 184, 42, 0.25);
+}
+
+/* Footer */
+footer {
+    background-color: #253f26;
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+    font-size: x-small;
 }
