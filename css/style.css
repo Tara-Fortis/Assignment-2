@@ -185,7 +185,7 @@ nav {
             "aside aside";
     }
     h1 {
-        grid-template-areas: title;
+        grid-area: title;
     }
     figure:first-of-type {
         grid-area: book;
