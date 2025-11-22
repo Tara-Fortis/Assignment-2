@@ -41,15 +41,15 @@
             <figure>
                 <img class="img-fluid" src="images/brandon_sanderson.png" alt="Photo of Brandon Sanderson">
                 <figcaption>Brandon Sanderson</figcaption>
-                    <p>
-                        <small>
-                            By <a href="//commons.wikimedia.org/wiki/User:Jaqen" title="User:Jaqen">Niccolò
-                                Caranti</a>
-                            - <span lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0"
-                                title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a
-                                href="https://commons.wikimedia.org/w/index.php?curid=52728836">Link</a>
-                        </small>
-                    </p>
+                <p>
+                    <small>
+                        By <a href="//commons.wikimedia.org/wiki/User:Jaqen" title="User:Jaqen">Niccolò
+                            Caranti</a>
+                        - <span lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0"
+                            title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a
+                            href="https://commons.wikimedia.org/w/index.php?curid=52728836">Link</a>
+                    </small>
+                </p>
             </figure>
             <aside>
                 <p>
@@ -79,23 +79,34 @@
             </p>
         </article>
         <button class="btn btn-danger" id="order-now" type="button" data-bs-toggle="collapse" data-bs-target="#form">
-            Order your
-            copy now
+            Order your copy now
         </button>
         <form>
             <div id="form" class="collapse">
-                <fieldset>
-                    <label class="form-label">
-                        Name:
-                        <input name="name" type="text" class="form-control" autocomplete="name" />
-                    </label>
-                </fieldset>
-                <fieldset>
-                    <label class="form-label">
-                        Email:
-                        <input type="email" class="form-control" autocomplete="email" />
-                    </label>
-                </fieldset>
+                <label class="form-label">
+                    First Name:
+                    <input type="text" class="form-control" />
+                </label>
+                <label class="form-label">
+                    Last Name:
+                    <input type="text" class="form-control" />
+                <label class="form-label">
+                    Address:
+                    <input type="text" class="form-control" />
+                </label>
+                <label class="form-label">
+                    City:
+                    <input type="text" class="form-control" />
+                <label class="form-label">
+                    Province:
+                    <input type="text" class="form-control" />
+                <label class="form-label">
+                    Postal Code:
+                    <input type="text" class="form-control" pattern="^[A-Za-z]\d[A-Za-z][ ]?\d[A-Za-z]\d$" />
+                    <!-- From https://regexpattern.com/ and https://gist.github.com/vasudevap/19933b318ff7c333aafc43d256a20fd7 -->
+                <label class="form-label">
+                    Phone:
+                    <input type="tel" class="form-control" />
                 <button class="btn btn-primary mb-1" type="submit">Place order</button>
             </div><!-- #form -->
         </form>
