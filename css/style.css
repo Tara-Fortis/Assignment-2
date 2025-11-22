@@ -1,9 +1,13 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Amarante&family=Cinzel:wght@400..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Typography */
 body {
-    font-family: "Lora", serif !important;
+    font-family: "Lora", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal
@@ -25,9 +29,16 @@ h4 {
 }
 
 /* Layout */
-.grid {
+article:first-of-type {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 1rem;
+}
+
+h1,
+figure {
+    margin: auto;
 }
 
 aside {
@@ -133,6 +144,7 @@ nav {
 
 /* Carousel */
 /* Adapted from https://stackoverflow.com/questions/20007610/bootstrap-carousel-multiple-frames-at-once */
+
 @media (max-width: 767px) {
     .carousel-inner .carousel-item>div {
         display: none;
@@ -160,6 +172,29 @@ nav {
     .carousel-inner .carousel-item-start.active,
     .carousel-inner .carousel-item-prev {
         transform: translateX(-25%);
+    }
+
+    article:first-of-type {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+        gap: 1rem;
+        grid-template-areas:
+            "title title"
+            "book author"
+            "aside aside";
+    }
+    h1 {
+        grid-template-areas: title;
+    }
+    figure:first-of-type {
+        grid-area: book;
+    }
+    figure:nth-of-type(2) {
+        grid-area: author;
+    }
+    aside {
+        grid-area: aside;
     }
 }
 
