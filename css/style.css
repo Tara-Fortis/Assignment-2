@@ -218,6 +218,14 @@ nav {
     box-shadow: 0 0 0 0.2rem rgba(208, 184, 42, 0.25);
 }
 
+/* Form */
+fieldset {
+    margin: 3em;
+    display: flex;
+    flex-direction: column;
+    max-width: 50vw;
+}
+
 /* Footer */
 footer {
     background-color: #253f26;
